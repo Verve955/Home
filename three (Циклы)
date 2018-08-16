@@ -1,0 +1,24 @@
+<pre>
+
+<?php
+
+ini_set('max_execution_time', 3);
+
+$employees = [
+    'Beth' => 1030,
+    'Tamekia' => 1800,
+    'Nicolle' => 1200,
+    'Stacee' => 2000,
+    'Rex' => 1950,
+    'Kecia' => 1750,
+    'Estela' => 2000,
+    'Karly' => 1050,
+    'Ciara' => 1500,
+    'Christopher' => 1200,
+];
+arsort($employees);
+
+foreach ($employees as $x => $x_value) {
+    echo "$x, $x_value"; 
+    echo "<br>";
+}
