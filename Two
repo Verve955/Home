@@ -1,0 +1,47 @@
+<pre>
+
+<?php
+
+//ini_set('max_execution_time', 3);
+
+$employees = [
+
+    'Beth' => [
+        'salary' => '1030'
+    ],
+    'Tamekia' => [
+        'salary' => '1080'
+    ],
+    'Nicolle' => [
+        'salary' => '1200'
+    ],
+    'Stacee' => [
+        'salary' => '2000'
+    ],
+    'Rex' => [
+        'salary' => '1950'
+    ],
+    'Kecia' => [
+        'salary' => '1750'
+    ],
+    'Estela' => [
+        'salary' => '2000'
+    ],
+    'Karly' => [
+        'salary' => '1050'
+    ],
+    'Ciara' => [
+        'salary' => '1500'
+    ],
+    'Christopher' => [
+        'salary' => '1200'
+    ],
+];
+arsort($employees);
+
+foreach ($employees as $x => $x_value) {
+    $result[$x] = $x_value['salary'];
+}
+$min = min($result);
+
+echo "Minimum $x :".$min."<br/>";
